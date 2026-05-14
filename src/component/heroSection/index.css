@@ -1,0 +1,31 @@
+.btn-indigo-border {
+  background: linear-gradient(180deg,
+      rgba(88, 128, 235, 0.15) 0%,
+      rgba(59, 66, 232, 0.15) 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.heading_text {
+  @apply text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[64px]
+}
+
+.heading2_text {
+  @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]
+}
+
+.heading3_text {
+  @apply text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[30px]
+}
+
+.prg_text {
+  @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]
+}
+
+.sm_text {
+  @apply text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px]
+}
