@@ -39,8 +39,6 @@
 }
 
 .accordion_card_active {
-  
-
   background:
     linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
     radial-gradient(
@@ -48,14 +46,10 @@
       rgba(59,66,232,0.5) 0%,
       rgba(59,66,232,0) 100%
     );
-
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
-
   box-shadow: inset 0px 0px 30px 0px #FFFFFF33;
-
   border: 1px solid #FFFFFF1A;
-
   padding: 0;
 }
 

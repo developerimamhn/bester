@@ -1,90 +1,81 @@
-import React from 'react'
-import AutoAnalysisCard from './AutoAnalysisCard'
-import icon_4 from "../../assets/img/icon_4.png";
-import icon_5 from "../../assets/img/icon_5.png";
-import icon_6 from "../../assets/img/icon_6.png";
-import icon_7 from "../../assets/img/icon_7.png";
-import icon_8 from "../../assets/img/icon_8.png";
+import imageone from '../../assets/image/autocardon.png';
+import imagetwo from '../../assets/image/autocardtwo.svg';
+import imagethree from '../../assets/image/autocardthree.svg';
+import imagefive from '../../assets/image/lowcard.svg';
+import imagesix from '../../assets/image/imagesix.svg';
 
 const Powerful = () => {
+  const cards = [
+    {
+      id: 1,
+      image: imageone,
+      title: "Auto analysis",
+      desc: "Real-time pattern recognition and crash probability analysis running in the background.",
+    },
+  {
+    id: 2,
+    image: imagetwo,
+    title: "Live dashboard",
+    desc: "Comprehensive overlay showing live stats, next prediction window, and historical metrics.",
+  },
+  {
+    id: 3,
+    image: imagethree,
+    title: "Safety modes",
+    desc: "Conservative, balanced, and aggressive signal modes with configurable risk thresholds.",
+  },
+  {
+    id: 4,
+    image: imagetwo,
+    title: "Smart notifications",
+    desc: "Instant alerts when high-confidence triggers are detected with customizable sound options.",
+  },
+  {
+    id: 5,
+    image: imagefive,
+    title: "Low overhead",
+    desc: "Optimized algorithms ensure minimal CPU and memory usage while maintaining precision.",
+  },
+  {
+    id: 6,
+    image: imagesix,
+    title: "Local only processing",
+    desc: "All calculations run locally in your browser. No data ever leaves your machine.",
+  },
+  ];
+
   return (
-    <div className='w-full max-w-309 mx-auto min-h-screen flex flex-col items-center justify-center'>
-      <div className='w-full flex items-center justify-between'>
-        <h2 className='font-medium text-[48px] leading-[110%] capitalize bg-[linear-gradient(90deg,rgba(255,255,255,0)_-67.03%,#FFFFFF_46.74%,rgba(255,255,255,0)_167.28%)] bg-clip-text text-transparent'>
-          Our powerful <br /> features
-        </h2>
-        <p className='text-[#9796A1] font-normal text-[16px] leading-[150%] tracking-[0%]'>
-          Everything you need for informed crash game <br /> analysis in one streamlined extension.
-        </p>
-      </div>
+    <div className='bg-[#000002]'>
+      <div className='container mx-auto py-9 sm:py-10 md:py-12 lg:py-16 xl:py-24 2xl:py-30'>
+        <div className='flex items-center justify-between'>
+          <h1 className='ourpowerfullh1'>Our Powerful <br className='hidden sm:block'/> Features</h1>
+          <p className='discovertheezma'>Everything you need for informed crash game <br className='hidden md:block'/> analysis in one streamlined extension.</p>
+        </div>
+        <div className='pt-6 sm:pt-8 md:pt-9 lg:pt-10 xl:pt-12 2xl:pt-15'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4'>
+              {cards.map((item) => (
+                  <div
+                    key={item.id}
+                    className={`powerfullcard flex flex-col items-start justify-between ${
+                      item.id % 2 === 0 ? "flex-col-reverse" : ""
+                    }`}
+                  >
+                    <img
+                      src={item.image}
+                      alt="autocard"
+                      className="powerfullcardimg"
+                    />
 
-      <div className='w-full grid grid-cols-3 gap-6 mt-16'>
-        <div className='w-full rounded-3xl p-4 bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-[100px] border border-white/10'>
-          <AutoAnalysisCard />
-          <div className='flex flex-col gap-1.25'>
-            <p className='font-medium text-[16px] leading-[150%] tracking-[0%] text-white'>
-              Auto analysis
-            </p>
-            <p className='text-[#ADB2B9] font-normal text-[14px] leading-[150%] tracking-[0%]'>
-              Real-time pattern recognition and crash probability <br /> analysis running in the background.
-            </p>
+                    <div>
+                      <h3 className="powerfullautaiwtl">{item.title}</h3>
+                      <p className="powerfullautaiwtlp">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
           </div>
         </div>
-
-        <div className='gap-4 rounded-3xl border border-[#FFFFFF1A] p-4 bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-[100px]'>
-          <div className='flex flex-col gap-1.25'>
-            <p className='text-white font-medium text-[16px] leading-[150%] tracking-[0%]'>
-              Live dashboard
-            </p>
-            <p className='text-[#ADB2B9] font-normal text-[14px] leading-[150%] tracking-[0%]'>
-              Comprehensive overlay showing live stats, next <br /> prediction window, and historical metrics.
-            </p>
-          </div>
-          <div className='flex flex-col gap-2.5 pt-6'>
-            <div className='relative flex items-center justify-between px-4.25 py-4.25 rounded-2xl bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-[22.6px] '>
-              <div className='absolute inset-0 rounded-2xl p-px glass-panel-border' />
-              <div className='flex items-center gap-[10.91px]'>
-                <img src={icon_4} alt="bg" className='w-[12.54198169708252px] h-[13.186047554016113px]' />
-                <div className="w-18 h-2.25 rounded-full bg-white/15" />
-              </div>
-              <div className='flex items-center gap-[10.91px]'>
-                <img src={icon_5} alt="bg" className='w-[10.82767105102539px] h-[13.187002182006836px]' />
-                <div className="w-8.75 h-2.25 rounded-full bg-white" />
-              </div>
-            </div>
-            <div className='relative flex items-center justify-between rounded-2xl bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)] backdrop-blur-[22.6px]'>
-              <div className='absolute inset-0 rounded-2xl p-px glass-panel-border' />
-              <div className='flex flex-col gap-[17.73px] px-[16.37px] py-[14.38px] '>
-                <div className='flex items-center gap-[10.91px]'>
-                  <img src={icon_6} alt="bg" className='w-[13.393937110900879px] h-[13.210445404052734px]' />
-                  <div className="w-15 h-2.25 rounded-full bg-white/15" />
-                </div>
-                <div className='flex items-center gap-[10.91px]'>
-                  <img src={icon_7} alt="bg" className='w-[13.91094970703125px] h-[11.147164344787598px]' />
-                  <div className="w-10.5 h-2.25 rounded-full bg-white/15" />
-                </div>
-                <div className='flex items-center gap-[10.91px]'>
-                  <img src={icon_8} alt="bg" className='w-[12.172128677368164px] h-[13.71909236907959px]' />
-                  <div className="w-20.25 h-2.25 rounded-full bg-white/15" />
-                </div>
-              </div>
-              <div className="w-0 h-[102.31px] border-[0.68px] border-[#FFFFFF0F] opacity-100" />
-              <div className='flex flex-col gap-[10.91px] px-[16.37px] py-[14.38px] '>
-                <div className="w-15 h-2.25 rounded-full bg-white/15" />
-                <div className="w-10.5 h-2.25 rounded-full bg-white/15" />
-                <div className="w-12.5 h-2.25 rounded-full bg-white/15" />
-                <div className="w-7 h-2.25 rounded-full bg-white" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='h-50 bg-white/10 rounded-2xl'></div>
-        <div className='h-50 bg-white/10 rounded-2xl'></div>
-        <div className='h-50 bg-white/10 rounded-2xl'></div>
-        <div className='h-50 bg-white/10 rounded-2xl'></div>
       </div>
     </div>
-
   )
 }
 

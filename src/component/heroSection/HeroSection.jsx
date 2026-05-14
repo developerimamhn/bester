@@ -1,4 +1,3 @@
-import React from 'react'
 import button_bg_img from "../../assets/img/button&bold_bg_img.png";
 import icon from "../../assets/img/icon.png";
 import hero_bg_img from "../../assets/img/hero_bg_img.png";
@@ -44,7 +43,7 @@ const HeroSection = () => {
                         Precision Crash Predictions
                     </h1>
                     <p className='font-normal prg_text leading-[150%] tracking-[0%] text-center text-[#EFEDFDB2]'>
-                        Advanced time-range crash window forecasting with 85% accuracy, 6% daily target, and 1 trigger <br /> per 10 minutes. Powered by sophisticated probability modeling.
+                        Advanced time-range crash window forecasting with 85% accuracy, 6% daily target, and 1 trigger <br /> per 10 minutes. Powered by sophisticated probability modeling.
                     </p>
                     <div className='rounded-2xl border border-[#FFFFFF] p-1 sm:p-1.5 md:p-2 bg-[#FFFFFF66]'>
                         <button className='relative z-10 rounded-xl py-2 pr-2 bg-[#3B42E8] shadow-[0px_3.71px_4.85px_0px_#3B42E827,0px_10.27px_13.4px_0px_#3B42E838,0px_24.72px_32.26px_0px_#3B42E830,0px_42px_107px_0px_#3B42E857,inset_0px_1px_4px_2px_#DFE0FF,inset_0px_1px_18px_2px_#CFD1FF] cursor-pointer'>
