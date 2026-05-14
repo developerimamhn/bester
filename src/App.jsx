@@ -1,14 +1,16 @@
 import './App.css';
 import DownExt from "./component/downloadExt/DownloadExt";
 import Feq from "./component/fEQ/feq";
-import Powerful from './component/ourPowerful/Powerful'
-import HeroSection from './component/heroSection/HeroSection'
+import Powerful from './component/ourPowerful/Powerful';
+import HeroSection from './component/heroSection/HeroSection';
+import NavBar from './component/comman/navBar';
 
 function App() {
 
 
   return (
     <div className=''>
+      <NavBar />
       <HeroSection />
       <Powerful />
       <DownExt />
