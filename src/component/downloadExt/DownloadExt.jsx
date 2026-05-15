@@ -1,4 +1,4 @@
-import Chrome from "../../assets/image/Chrome.png";
+import Chrome from "../../assets/image/chrome.png";
 import Edge from "../../assets/image/Edge.png";
 import Firefox from "../../assets/image/Firefox.png";
 import imgCardBg from "../../assets/image/Card.png";
@@ -28,9 +28,9 @@ const browsers = [
 
 const DownloadExtension = () => {
     return (
-        <section className="bg-[#000002] w-full  py-6 flex flex-col items-center gap-[48px]">
-            <div className="w-full max-w-5xl mx-auto flex flex-col items-start gap-[12px]"><div
-                className="fill_input border border-white/8 px-[16px] py-[3px] rounded-[80px]" >
+        <section className="bg-[#000002] w-full  py-6 flex flex-col items-center gap-12">
+            <div className="w-full max-w-5xl mx-auto flex flex-col items-start gap-3"><div
+                className="fill_input border border-white/8 px-4 py-0.75 rounded-[80px]" >
                 <span
                     className="all_font_normal uppercase text-white text-[10px] sm:text-[12px] lg:text-[14px] tracking-normal leading-[150%]">
                     Real-time predictions
@@ -48,8 +48,8 @@ const DownloadExtension = () => {
                 {browsers.map((browser) => (
                     <div
                         key={browser.name}
-                        className="relative w-full sm:w-[376px] h-[285px] rounded-[20px] border border-[rgba(255,255,255,0.1)] overflow-hidden">
-                        <div className="blue-glow absolute top-0 left-1/2 -translate-x-1/2 h-[1px] w-[230px]" />
+                        className="relative w-full sm:w-94 h-71.25 rounded-[20px] border border-[rgba(255,255,255,0.1)] overflow-hidden">
+                        <div className="blue-glow absolute top-0 left-1/2 -translate-x-1/2 h-px w-57.5" />
                         <img
                             src={imgCardBg}
                             alt=""

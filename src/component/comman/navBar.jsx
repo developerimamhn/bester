@@ -13,13 +13,6 @@ const navLinks = [
   { name: "Contact", id: "Contact" },
 ];
 
-const options = [
-  { label: "English", image: "/flag-en.svg" },
-  { label: "Spanish", image: "/flag-es.svg" },
-  { label: "French", image: "/flag-fr.svg" },
-  { label: "German", image: "/flag-de.svg" },
-];
-
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
@@ -28,8 +21,6 @@ const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [selected, setSelected] = useState(options[0]);
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleClickOutside = (event) => {
     if (
@@ -146,7 +137,7 @@ const NavBar = () => {
           <ul className="sm:hidden flex  gap-4 shadow-[0px_3.71px_4.85px_0px_rgba(59,66,232,0.15),0px_10.27px_13.4px_0px_rgba(59,66,232,0.22),0px_24.72px_32.26px_0px_rgba(59,66,232,0.19),0px_42px_107px_0px_rgba(59,66,232,0.34),inset_0px_1px_4px_2px_rgba(223,224,255,1),inset_0px_1px_18px_2px_rgba(207,209,255,1)] rounded-3xl">
           <button className="growingstabtn group  relative">
             <div className="relative h-full flex items-center justify-center gap-3.25 sm:gap-3.5 md:gap-3.75 lg:gap-4 xl:gap-5 2xl:gap-6 ">
-              <div className="relative  flex items-center justify-center z-2">
+              <div className="relative  flex items-center justify-center z-[2]">
                 <span className="absolute top-0 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3 transition-all duration-700 ease-in-out">
                   Get Extension
                 </span>
@@ -200,7 +191,7 @@ const NavBar = () => {
         <ul className="sm:flex hidden gap-4 shadow-[0px_3.71px_4.85px_0px_rgba(59,66,232,0.15),0px_10.27px_13.4px_0px_rgba(59,66,232,0.22),0px_24.72px_32.26px_0px_rgba(59,66,232,0.19),0px_42px_107px_0px_rgba(59,66,232,0.34),inset_0px_1px_4px_2px_rgba(223,224,255,1),inset_0px_1px_18px_2px_rgba(207,209,255,1)] rounded-3xl">
           <button className="growingstabtn group  relative">
             <div className="relative h-full flex items-center justify-center gap-3.25 sm:gap-3.5 md:gap-3.75 lg:gap-4 xl:gap-5 2xl:gap-6 ">
-              <div className="relative  flex items-center justify-center z-2">
+              <div className="relative  flex items-center justify-center [z-2]">
                 <span className="absolute top-0 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3 transition-all duration-700 ease-in-out">
                   Get Extension
                 </span>
