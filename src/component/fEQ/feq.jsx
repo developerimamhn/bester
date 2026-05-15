@@ -31,7 +31,7 @@ const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section className="bg-[#000002] w-full  py-16 px-4 sm:px-6">
+        <section className="bg-transparent w-full py-16 px-4 sm:px-6">      
             <div className="flex flex-col lg:flex-row max-w-5xl mx-auto gap-10 lg:gap-[48px]">
                 <div className="shrink-0 pt-0 lg:pt-[8px] text-center lg:text-left">
                     <h2 className="hero_gradient_title text-3xl sm:text-4xl lg:text-5xl leading-tight">
