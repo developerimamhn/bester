@@ -29,7 +29,7 @@ const stats = [
 
 const HeroSection = () => {
     return (
-        <div className='relative w-full h-auto flex flex-col items-center'>
+        <div className='relative w-full h-auto flex flex-col items-center pt-[70px] sm:pt-[70px] md:pt-[90px] lg:pt-[120px] xl:pt-[130px]'>
             <img src={hero_bg_img} alt="bg" className='absolute inset-0 w-full h-full object-cover rounded-b-3xl z-0' />
             <img src={hero_bg} alt="bg" className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full z-1 pointer-events-none' />
             <div className='relative flex flex-col items-center justify-center pt-30'>
@@ -39,7 +39,7 @@ const HeroSection = () => {
                     </p>
                 </div>
                 <div className='flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6'>
-                    <h1 className='flex items-center justify-center font-semibold heading_text leading-[120%] bg-[linear-gradient(90deg,rgba(255,255,255,0)_-67.03%,#FFFFFF_46.74%,rgba(255,255,255,0)_167.28%)] bg-clip-text text-transparent'>
+                    <h1 className='flex items-center justify-center font-semibold heading_text leading-[120%] bg-[linear-gradient(90deg,rgba(255,255,255,0)_-67.03%,#FFFFFF_46.74%,rgba(255,255,255,0)_167.28%)] bg-clip-text text-transparent '>
                         Precision Crash Predictions
                     </h1>
                     <p className='font-normal prg_text leading-[150%] tracking-[0%] text-center text-[#EFEDFDB2]'>
