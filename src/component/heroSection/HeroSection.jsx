@@ -30,7 +30,7 @@ const stats = [
 const HeroSection = () => {
     return (
         <div className='relative w-full h-auto flex flex-col items-center'>
-            <img src={hero_bg_img} alt="bg" className='absolute inset-0 w-full h-full object-cover rounded-3xl z-0' />
+            <img src={hero_bg_img} alt="bg" className='absolute inset-0 w-full h-full object-cover rounded-b-3xl z-0' />
             <img src={hero_bg} alt="bg" className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full z-1 pointer-events-none' />
             <div className='relative flex flex-col items-center justify-center pt-30'>
                 <div className='rounded-[80px] border border-[#FFFFFF14] py-1 px-2 sm:px-3 md:px-4 mb-1 sm:mb-2 bg-[linear-gradient(90.8deg,rgba(255,255,255,0.08)_15.13%,rgba(255,255,255,0)_50.66%,rgba(255,255,255,0.08)_85.52%)]'>

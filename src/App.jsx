@@ -10,7 +10,9 @@ function App() {
 
   return (
     <div className=''>
-      <NavBar />
+      <div className='flex items-center justify-center relative'>
+        <NavBar />
+      </div>
       <HeroSection />
       <Powerful />
       <DownExt />
