@@ -1,11 +1,12 @@
 @import "tailwindcss";
-@import '../src/component/advCrash/index.css';
+@import '../src/component/advCrash/AdvancedCrash.css';
 @import '../src/component/downloadExt/index.css';
 @import '../src/component/footer/index.css';
 @import '../src/component/header/index.css';
 @import '../src/component/fEQ/index.css';
 @import '../src/component/ourPowerful/index.css';
-@import '../src/component/seeAction/index.css';
+@import '../src/component/seeAction/seeaction.css';
+
 
 
 @theme {

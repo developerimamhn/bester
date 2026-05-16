@@ -1,0 +1,49 @@
+import React from 'react'
+import './seeaction.css';
+import VideoImg from './assets/Bg-Video.svg';
+import Arrow from './assets/button-ar.svg';
+
+
+export const SeeAction = () => {
+    return (
+        <div>
+            <section className="action-section">
+                <div className="action-header">
+                    <span className="badge">Real-Time Predictions</span>
+                    <h2 className="section-title">See It In Action</h2>
+                    <p className="section-subtitle">
+                        Watch the bot analyze rounds and generate predictions in real-time.
+                    </p>
+                </div>
+
+                <div className="video-wrapper">
+                    <div className="video-ambient-beam" />
+
+                    <div className="video-container">
+                        <img
+                            src={VideoImg}
+                            className="video-screenshot"
+                            alt="Dashboard Preview"
+                        />
+                        <div className="video-overlay" />
+
+                        <button className="play-button-container" aria-label="Play Video">
+                            <div className="play-pulse-ring ring-1" />
+                            <div className="play-pulse-ring ring-2" />
+                            <div className="play-button-core">
+                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-[#0d0f14] translate-x-[1px]">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+
+                            <div className="watch-label-wrapper">
+                                <img src={Arrow} alt="" />
+                                <span className="watch-label">Watch video</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    )
+}
