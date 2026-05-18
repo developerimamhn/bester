@@ -1,0 +1,103 @@
+.badge-wrapper {
+    @apply pt-8 sm:pt-9 md:pt-10 lg:pt-12 xl:pt-16 2xl:pt-24
+}
+
+.badge-pill {
+    @apply rounded-[80px] border border-[#FFFFFF14] py-1 px-2 sm:px-3 md:px-4 mb-1 sm:mb-2
+}
+
+.badge-text {
+    @apply text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[150%] tracking-[0%] text-center uppercase text-[#FFFFFF]
+}
+
+.wallet-copy-icon {
+    @apply h-2.75 sm:h-3 md:h-3.25 lg:h-3.5 xl:h-3.75 2xl:h-4 w-2.75 sm:w-3 md:w-3.25 lg:w-3.5 xl:w-3.75 2xl:w-4
+}
+
+.section-content {
+    @apply gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4
+}
+
+.section-heading {
+    @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]
+}
+
+.section-subtext {
+    @apply font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] tracking-[0%] text-center text-[#EFEDFDB2]
+}
+
+.wallet-card {
+    @apply gap-4 w-full h-auto rounded-2xl border border-[#FFFFFF1F] bg-[#FFFFFF0A] backdrop-blur-[200px] p-3 sm:p-3.5 md:p-3.75 lg:p-4 xl:p-5 2xl:p-6
+}
+
+.wallet-card-gap {
+    @apply gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4
+}
+
+.wallet-icon-wrapper {
+    @apply flex items-center justify-center w-6 sm:w-8 md:w-9 lg:w-10 xl:w-12 2xl:w-15 h-6 sm:h-8 md:h-9 lg:h-10 xl:h-12 2xl:h-15 rounded-[68px] bg-[#FFFFFF0A]
+}
+
+.wallet-icon {
+    @apply w-4 sm:w-5 md:w-6 lg:w-8 xl:w-9 2xl:w-10 h-4 sm:h-5 md:h-6 lg:h-8 xl:h-9 2xl:h-10
+}
+
+.wallet-name {
+    @apply text-white font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[120%] tracking-[0%]
+}
+
+.wallet-network {
+    @apply text-[#FFFFFFCC] font-normal text-[10px] sm:text-[11px] md:text-[12px] leading-[120%] tracking-[0%]
+}
+
+.wallet-address-box {
+    @apply w-full h-auto flex items-center justify-between rounded-lg border border-[#FFFFFF1F] bg-[#000002] p-1
+}
+
+.wallet-address-text {
+    @apply text-[#9796A1] font-normal text-[10px] sm:text-[11px] md:text-[12px] leading-[150%] p-2.5 sm:p-2.75 md:p-3 lg:p-3.25 xl:p-3.5 2xl:p-4
+}
+
+.wallet-copy-btn {
+    @apply w-10.5 h-19.5 rounded-[5px] bg-[#FFFFFF14]
+}
+
+.footer-top {
+    @apply gap-8 pt-8 sm:pt-9 md:pt-10 lg:pt-12 xl:pt-16 2xl:pt-21
+}
+
+.footer-brand {
+    @apply gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4
+}
+
+.footer-logo {
+    @apply w-24 sm:w-28 md:w-32 lg:w-36 xl:w-40 2xl:w-46 h-auto
+}
+
+.footer-desc {
+    @apply text-[#F0F0F2CC] font-normal text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] leading-[150%]
+}
+
+.footer-links-column {
+    @apply gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4
+}
+
+.footer-link {
+    @apply text-[#F0F0F2] font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%]
+}
+
+.footer-bottom {
+    @apply gap-4 pt-4 sm:pt-5 md:pt-6 lg:pt-8 xl:pt-9 2xl:pt-10 pb-3.5 sm:pb-3.75 md:pb-4 lg:pb-5 xl:pb-6 2xl:pb-8
+}
+
+.footer-copyright {
+    @apply text-[#F0F0F2CC] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[18px] leading-[150%]
+}
+
+.footer-social-wrapper {
+    @apply w-5 lg:w-6 xl:w-7 2xl:w-8 h-5 lg:h-6 xl:h-7 2xl:h-8
+}
+
+.footer-social-icon-sm {
+    @apply w-3.75 lg:w-4 xl:w-5 2xl:w-6 h-3.75 lg:h-4 xl:h-5 2xl:h-6
+}
