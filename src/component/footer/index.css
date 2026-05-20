@@ -7,7 +7,7 @@
 }
 
 .badge-text {
-    @apply text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[150%] tracking-[0%] text-center uppercase text-[#FFFFFF]
+    @apply Poppins text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] leading-[150%] tracking-[0%] text-center uppercase text-[#FFFFFF]
 }
 
 .wallet-copy-icon {
@@ -19,11 +19,11 @@
 }
 
 .section-heading {
-    @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]
+    @apply APK Protocol text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px]
 }
 
 .section-subtext {
-    @apply font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] tracking-[0%] text-center text-[#EFEDFDB2]
+    @apply Poppins font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] tracking-[0%] text-center text-[#EFEDFDB2]
 }
 
 .wallet-card {
@@ -43,11 +43,11 @@
 }
 
 .wallet-name {
-    @apply text-white font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[120%] tracking-[0%]
+    @apply APK Protocol text-white font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] leading-[120%] tracking-[0%]
 }
 
 .wallet-network {
-    @apply text-[#FFFFFFCC] font-normal text-[10px] sm:text-[11px] md:text-[12px] leading-[120%] tracking-[0%]
+    @apply Poppins text-[#FFFFFFCC] font-normal text-[10px] sm:text-[11px] md:text-[12px] leading-[120%] tracking-[0%]
 }
 
 .wallet-address-box {
@@ -55,7 +55,7 @@
 }
 
 .wallet-address-text {
-    @apply text-[#9796A1] font-normal text-[10px] sm:text-[11px] md:text-[12px] leading-[150%] p-2.5 sm:p-2.75 md:p-3 lg:p-3.25 xl:p-3.5 2xl:p-4
+    @apply Poppins text-[#9796A1] font-normal text-[10px] sm:text-[11px] md:text-[12px] leading-[150%] p-2.5 sm:p-2.75 md:p-3 lg:p-3.25 xl:p-3.5 2xl:p-4
 }
 
 .wallet-copy-btn {
@@ -75,7 +75,7 @@
 }
 
 .footer-desc {
-    @apply text-[#F0F0F2CC] font-normal text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] leading-[150%]
+    @apply Poppins text-[#F0F0F2CC] font-normal text-[14px] sm:text-[15px] md:text-[16px] lg:text-[20px] xl:text-[24px] 2xl:text-[28px] leading-[150%]
 }
 
 .footer-links-column {
@@ -83,7 +83,7 @@
 }
 
 .footer-link {
-    @apply text-[#F0F0F2] font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%]
+    @apply Poppins text-[#F0F0F2] font-normal text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%]
 }
 
 .footer-bottom {
@@ -91,7 +91,7 @@
 }
 
 .footer-copyright {
-    @apply text-[#F0F0F2CC] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[18px] leading-[150%]
+    @apply Satoshi text-[#F0F0F2CC] font-normal text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[17px] 2xl:text-[18px] leading-[150%]
 }
 
 .footer-social-wrapper {
