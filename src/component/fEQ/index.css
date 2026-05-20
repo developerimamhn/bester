@@ -1,0 +1,86 @@
+.hero_gradient_title {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0) -67.03%,
+    #FFFFFF 46.74%,
+    rgba(255,255,255,0) 167.28%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  font-family: 'APK Protocol', sans-serif;
+  font-weight: 500;
+  line-height: 120%;
+
+  font-size: 32px;
+}
+
+@media (min-width: 640px) {
+  .hero_gradient_title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero_gradient_title {
+    font-size: 48px;
+  }
+}
+
+
+.accordion_card {
+    
+  background: rgba(255,255,255,0.03);
+  border: 1px solid transparent;
+  padding: 0;
+}
+
+.accordion_card_active {
+  background:
+    linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+    radial-gradient(
+      74.72% 72.66% at 50% 100%,
+      rgba(59,66,232,0.5) 0%,
+      rgba(59,66,232,0) 100%
+    );
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  box-shadow: inset 0px 0px 30px 0px #FFFFFF33;
+  border: 1px solid #FFFFFF1A;
+  padding: 0;
+}
+
+.accordion_header {
+  height: 72px;
+
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.faq_question {
+  font-family: 'APK Protocol', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+
+.faq_answer {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #9796A1;
+  
+}

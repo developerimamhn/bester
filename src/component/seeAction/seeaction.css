@@ -46,17 +46,9 @@
     line-height: 1.2;
   
     @apply bg-clip-text text-transparent;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) -67.03%, #FFFFFF 46.74%, rgba(255, 255, 255, 0) 167.28%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  
-    background-image: linear-gradient(to right,
-        rgba(255, 255, 255, 0.1) 0%,
-        rgba(255, 255, 255, 0.5) 35%,
-        rgba(255, 255, 255, 1) 50%,
-        rgba(255, 255, 255, 0.5) 65%,
-        rgba(255, 255, 255, 0.1) 100%);
-  
-    opacity: 0.9;
   }
 
 .section-subtitle {
@@ -66,7 +58,7 @@
 
 
 .action-section {
-  @apply relative w-full bg-[#02040a] py-24 px-4 sm:px-6 overflow-hidden flex flex-col items-center justify-center;
+  @apply relative w-full bg-[#02040a] py-24 overflow-hidden flex flex-col items-center justify-center;
   background: radial-gradient(circle at 50% 100%, #111424 0%, #02040a 55%);
 }
 
@@ -83,7 +75,7 @@
 }
 
 .video-wrapper {
-    @apply relative w-full max-w-[1040px] mx-auto p-[15px] bg-[#050526] rounded-[22px];
+    @apply relative w-full p-[15px] bg-[#050526] rounded-[22px];
     box-shadow: 0 40px 80px rgba(0, 0, 0, 0.7);
   }
   
@@ -132,11 +124,11 @@
   }
   
   .video-container {
-    @apply relative w-full aspect-[16/8.5] rounded-[14px] overflow-hidden border border-white/[0.04];
+    @apply relative w-full h-auto rounded-[14px] overflow-hidden border border-white/4;
   }
   
   .video-screenshot {
-    @apply w-auto h-full object-cover select-none pointer-events-none;
+    @apply w-full h-full object-cover object-center ;
   }
   
   .video-overlay {

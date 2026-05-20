@@ -1,13 +1,13 @@
 import React from 'react'
 import './seeaction.css';
-import VideoImg from './assets/Bg-Video.svg';
+import VideoImg from '../../assets/image/videosection.png';
 import Arrow from './assets/button-ar.svg';
 
 
 export const SeeAction = () => {
     return (
         <div>
-            <section className="action-section">
+            <section className="action-section px-4 sm:px-0 ">
                 <div className="action-header">
                     <span className="badge">Real-Time Predictions</span>
                     <h2 className="section-title">See It In Action</h2>
@@ -16,7 +16,7 @@ export const SeeAction = () => {
                     </p>
                 </div>
 
-                <div className="video-wrapper">
+                <div className="video-wrapper container mx-auto">
                     <div className="video-ambient-beam" />
 
                     <div className="video-container">
@@ -31,7 +31,7 @@ export const SeeAction = () => {
                             <div className="play-pulse-ring ring-1" />
                             <div className="play-pulse-ring ring-2" />
                             <div className="play-button-core">
-                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-[#0d0f14] translate-x-[1px]">
+                                <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-[#0d0f14] translate-x-px">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
                             </div>

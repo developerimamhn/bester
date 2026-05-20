@@ -1,12 +1,12 @@
 @import "tailwindcss";
-@import '../src/component/advCrash/AdvancedCrash.css';
-@import '../src/component/downloadExt/index.css';
-@import '../src/component/footer/index.css';
-@import '../src/component/header/index.css';
-@import '../src/component/fEQ/index.css';
-@import '../src/component/ourPowerful/index.css';
-@import '../src/component/seeAction/seeaction.css';
-
+@import './component/advCrash/AdvancedCrash.css';
+@import './component/downloadExt/index.css';
+@import './component/footer/index.css';
+@import './component/header/index.css';
+@import './component/fEQ/index.css';
+@import './component/ourPowerful/index.css';
+@import './component/seeAction/seeaction.css';
+@import './component/heroSection/index.css';
 
 
 @theme {
@@ -75,3 +75,173 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: 'APK Protocol';
+  src: url('../src/assets/font/Protocol.ttf') format('truetype');
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../src/assets/font/Poppins-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'APK Protocol';
+  src: url('../src/assets/font/Protocol.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer utilities {
+  .growingstabtn {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(0deg, #3B42E8, #3B42E8),
+    linear-gradient(180deg, #3B42E8 0%, #3B42E8 100%);
+    border-image-source: linear-gradient(180deg, rgba(88, 128, 235, 0.15) 0%, rgba(59, 66, 232, 0.15) 100%);
+    box-shadow: 0px 3.71px 4.85px 0px rgba(59, 66, 232, 0.15);
+    box-shadow: 0px 10.27px 13.4px 0px rgba(59, 66, 232, 0.22);
+    box-shadow: 0px 24.72px 32.26px 0px rgba(59, 66, 232, 0.19);
+    box-shadow: 0px 42px 107px 0px rgba(59, 66, 232, 0.34);
+    box-shadow: 0px 1px 4px 2px rgba(223, 224, 255, 1) inset;
+    box-shadow: 0px 1px 18px 2px rgba(207, 209, 255, 1) inset;
+    font-family: 'Figtree';
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+  }
+  .growingstabtn{
+    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] py-2 pl-3 md:pl-4 lg:pl-5 xl:pl-6 pr-2;
+  }
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .scroll-container {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .scroll-content {
+    display: flex;
+    align-items: center;
+    animation: infinite-scroll 40s linear infinite;
+    position: relative;
+    z-index: 10;
+  }
+
+  .header {
+    position: fixed;
+    top: 0%;
+    z-index: 998;
+    transition: 0.5s;
+    transition: background 0.4s ease, padding 0.4s ease;
+    opacity: 0;
+    animation: slideUp 0.6s 0.4s ease forwards;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .header.scrolled {
+    background: #15161b7e;
+    opacity: 10%;
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .Link-manu-bar {
+    font-family: 'Poppins';
+    @apply font-normal text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[140%];
+  }
+  .Link-manu-bar {
+    @apply text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[13px] 2xl:text-[14px] duration-300 text-[#C6C3D2]  hover:text-[#fff];
+  }
+
+}

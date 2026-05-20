@@ -1,4 +1,3 @@
-import React from 'react';
 import './AdvancedCrash.css';
 import Icon1 from './assets/icon1.svg';
 import Icon2 from './assets/icon2.svg';

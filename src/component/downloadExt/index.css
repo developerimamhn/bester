@@ -1,0 +1,115 @@
+.btn-indigo-border {
+  background: linear-gradient(180deg,
+      rgba(88, 128, 235, 0.15) 0%,
+      rgba(59, 66, 232, 0.15) 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+
+
+
+.fill_input {
+  background: linear-gradient(90.8deg, rgba(255,255,255,0.08) 15.13%, rgba(255,255,255,0) 50.66%, rgba(255,255,255,0.08) 85.52%);
+}
+
+.all_font_normal {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, rgba(255,255,255,0) -67.03%, #FFFFFF 46.74%, rgba(255,255,255,0) 167.28%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'APK Protocol', sans-serif;
+  font-weight: 500;
+  line-height: 110%;
+ 
+}
+
+
+.text_normal_poppins {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+ 
+}
+
+
+.blue-glow {
+  background: linear-gradient(
+    90deg,
+    rgba(59,66,232,0) 0%,
+    #3b42e8 50%,
+    rgba(59,66,232,0) 100%
+  );
+}
+
+
+.apk-title {
+  font-family: 'APK Protocol', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+ 
+}
+
+.steps-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+ 
+  color: #9796A1;
+  text-align: center;
+}
+
+
+.input_box {
+  background: rgba(255,255,255,0.1);
+  padding: 16px;
+}
+
+
+.quick_install_title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F8FAFC;
+  
+}
+
+
+.browser_title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F8FAFC;
+ 
+}
+
+.install_steps_text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9796A1;
+  
+}
+
+.browser_label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F8FAFC;
+ 
+}
+

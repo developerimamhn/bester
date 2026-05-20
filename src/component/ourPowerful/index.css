@@ -1,0 +1,41 @@
+.glass-panel-border {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.06) 0%,
+            rgba(255, 255, 255, 0) 85.33%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+@layer utilities {
+    .ourpowerfullh1 {
+    font-family: 'APK Protocol';
+    @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] font-medium leading-[110%] capitalize bg-[linear-gradient(90deg,rgba(255,255,255,0)_-67.03%,#FFFFFF_46.74%,rgba(255,255,255,0)_167.28%)] bg-clip-text text-transparent;
+    }
+    .discovertheezma{
+    @apply text-base font-normal leading-[150%] text-[#9796A1]
+    }
+    .powerfullcard {
+    @apply bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0)_100%)]
+    border border-[rgba(255,255,255,0.1)]
+    backdrop-blur-[100px]
+    opacity-100 rounded-md lg:rounded-lg xl:rounded-xl 2xl:rounded-2xl
+    p-2.75 sm:p-3 md:p-3.25 lg:p-3.5 xl:p-3.75 2xl:p-4
+    gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4;
+    }
+    .powerfullautaiwtl{
+        font-family: 'APK Protocol';
+        @apply font-medium text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]
+        leading-[150%]
+        tracking-[0%]
+        text-white;
+    }
+    .powerfullautaiwtlp{
+        font-family: 'Poppins';
+        @apply font-normal text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-[15px]
+            font-normal leading-[150%] tracking-[0%] text-[rgba(173,178,185,1)] pt-[5px];
+    }
+}
