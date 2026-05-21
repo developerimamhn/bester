@@ -26,16 +26,10 @@
 
 @layer components {
   .adv-crash-container {
-    @apply min-h-screen bg-[#02040a] text-white py-16 px-4 sm:px-6  selection:bg-blue-500/30;
-    background: radial-gradient(circle at 50% -10%, #161b33 0%, #02040a 60%);
+    @apply text-white py-16 px-4 sm:px-6;
   }
 }
 
-.badge {
-  @apply inline-block px-[16px] py-[10px] rounded-[80px] border border-white/10 text-[10px] sm:text-[12px] font-normal uppercase mb-6;
-  color: #8a8a93;
-  background: rgba(255, 255, 255, 0.03);
-}
 
 .section-title {
     @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] font-medium mb-[16px] text-center;
@@ -58,8 +52,8 @@
 
 
 .action-section {
-  @apply relative w-full bg-[#02040a] py-24 overflow-hidden flex flex-col items-center justify-center;
-  background: radial-gradient(circle at 50% 100%, #111424 0%, #02040a 55%);
+  @apply relative w-full py-24 overflow-hidden flex flex-col items-center justify-center;
+  /* background: radial-gradient(circle at 50% 100%, #111424 0%, #02040a 55%); */
 }
 
 .action-header {

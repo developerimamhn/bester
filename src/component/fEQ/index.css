@@ -1,3 +1,5 @@
+
+
 .hero_gradient_title {
   background: linear-gradient(
     90deg,
@@ -11,7 +13,7 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
 
-  font-family: 'APK Protocol', sans-serif;
+  font-family: 'APK Protocol';
   font-weight: 500;
   line-height: 120%;
 
@@ -68,16 +70,15 @@
 
 
 .faq_question {
-  font-family: 'APK Protocol', sans-serif;
+  font-family: 'APK Protocol';
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
   color: #FFFFFF;
 }
 
-
 .faq_answer {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;

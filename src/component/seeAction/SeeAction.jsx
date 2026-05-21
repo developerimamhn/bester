@@ -1,12 +1,12 @@
-import React from 'react'
 import './seeaction.css';
 import VideoImg from '../../assets/image/videosection.png';
 import Arrow from './assets/button-ar.svg';
-
+import imagess from '../../assets/image/Ellipse 1636.png';
 
 export const SeeAction = () => {
     return (
-        <div>
+        <div className='relative'>
+            <img src={imagess} alt="bg" className='w-2/3 absolute top-1/2 -translate-y-1/2 left-0 h-auto z-2' />
             <section className="action-section px-4 sm:px-0 ">
                 <div className="action-header">
                     <span className="badge">Real-Time Predictions</span>
@@ -15,7 +15,6 @@ export const SeeAction = () => {
                         Watch the bot analyze rounds and generate predictions in real-time.
                     </p>
                 </div>
-
                 <div className="video-wrapper container mx-auto">
                     <div className="video-ambient-beam" />
 

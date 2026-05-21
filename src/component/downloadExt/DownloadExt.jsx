@@ -5,6 +5,8 @@ import imgCardBg from "../../assets/image/Card.png";
 import LogoBg from "../../assets/image/Browser_Circle.png";
 import imgBlueBg from "../../assets/image/Dash_Image.png";
 import imgButtonTexture from "../../assets/image/button_bg_img.png";
+import bgone from '../../assets/image/Ellipse 1635.png';
+import linefore from '../../assets//image/Ellipse 1635ssss.png';
 
 
 const browsers = [
@@ -28,9 +30,11 @@ const browsers = [
 
 const DownloadExtension = () => {
     return (
-        <section className="bg-[#000002] w-full  py-6 flex flex-col items-center gap-12">
-            <div className="w-full max-w-5xl mx-auto flex flex-col items-start gap-3"><div
-                className="fill_input border border-white/8 px-4 py-0.75 rounded-[80px]" >
+        <section className="w-full  py-6 flex flex-col items-center gap-12 relative">
+            <img src={linefore} alt="" className="w-full absolute top-1/2 -translate-y-1/2 right-0 h-auto z-0" />
+            <img src={bgone} alt="" className="absolute top-0 right-0 w-1/2 h-full select-none pointer-events-none z-10" />
+            <div className="w-full container mx-auto flex flex-col items-start gap-3">
+                <div className="fill_input border border-white/8 px-4 py-0.75 rounded-[80px]" >
                 <span
                     className="all_font_normal uppercase text-white text-[10px] sm:text-[12px] lg:text-[14px] tracking-normal leading-[150%]">
                     Real-time predictions
@@ -94,8 +98,7 @@ const DownloadExtension = () => {
                     </div>
                 ))}
             </div>
-            <div className="relative w-full max-w-[1160px] mx-auto rounded-t-2xl overflow-hidden px-4 py-10">
-
+            <div className="relative w-full rounded-t-2xl px-4 py-10 container mx-auto">
                 <img
                     src={imgBlueBg}
                     alt=""
@@ -105,8 +108,14 @@ const DownloadExtension = () => {
 
                     <div className="w-full sm:w-[576px] rounded-2xl border border-white/10 backdrop-blur-[100px] overflow-hidden bg-black/10">
 
-                        <div className="px-4 py-3 border-b border-white/10">
+                        <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
                             <p className="text-white">Quick Install Guide</p>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.8334 9.16683L17.6667 2.3335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.3334 5.6665V1.6665H14.3334" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.16662 1.6665H7.49996C3.33329 1.6665 1.66663 3.33317 1.66663 7.49984V12.4998C1.66663 16.6665 3.33329 18.3332 7.49996 18.3332H12.5C16.6666 18.3332 18.3333 16.6665 18.3333 12.4998V10.8332" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+
                         </div>
 
                         <div className="p-4 sm:p-8 flex flex-col gap-5">

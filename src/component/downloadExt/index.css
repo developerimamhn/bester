@@ -18,7 +18,7 @@
 }
 
 .all_font_normal {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: 400;
 }
 
@@ -34,7 +34,7 @@
 
 
 .text_normal_poppins {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
   font-weight: 400;
   line-height: 150%;
  
@@ -52,7 +52,7 @@
 
 
 .apk-title {
-  font-family: 'APK Protocol', sans-serif;
+  font-family: 'APK Protocol';
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;

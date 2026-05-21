@@ -6,7 +6,7 @@ import button_bg_img from "../../assets/image/button&bold_bg_img.png";
 
 
 const navLinks = [
-  { name: "Home", id: "Home" },
+  { name: "Features", id: "Features" },
   { name: "About", id: "About" },
   { name: "Services", id: "Services" },
   { name: "Tokenomics", id: "Tokenomics" },

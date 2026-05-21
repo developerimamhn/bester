@@ -5,7 +5,7 @@ import hero_bg from "../../assets/image/hero_bg.png";
 import icon_1 from "../../assets/image/icon_1.png";
 import icon_2 from "../../assets/image/icon_2.png";
 import icon_3 from "../../assets/image/icon_3.png";
-import imagess from '../../assets/image/Ellipse 1632.png';
+
 
 const stats = [
     {
@@ -31,7 +31,7 @@ const stats = [
 const HeroSection = () => {
     return (
         <div className='relative w-full h-auto flex flex-col items-center pt-[70px] sm:pt-[70px] md:pt-[90px] lg:pt-[120px] xl:pt-[130px]'>
-            <img src={imagess} alt="bg" className='w-full absolute top-0 left-0 h-auto select-none pointer-events-none' />
+            {/*  */}
 
             <img src={hero_bg_img} alt="bg" className='absolute inset-0 w-full h-full object-cover rounded-b-3xl z-0' />
             <img src={hero_bg} alt="bg" className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full z-1 pointer-events-none' />

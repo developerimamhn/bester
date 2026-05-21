@@ -4,6 +4,7 @@ import imagethree from '../../assets/image/autocardthree.svg';
 import imagefive from '../../assets/image/lowcard.svg';
 import imagesix from '../../assets/image/imagesix.svg';
 
+
 const Powerful = () => {
   const cards = [
     {
@@ -45,8 +46,9 @@ const Powerful = () => {
   ];
 
   return (
-    <div className='bg-[#000002]'>
-      <div className='container mx-auto py-9 sm:py-10 md:py-12 lg:py-16 xl:py-24 2xl:py-30'>
+    <div className=''>
+      
+      <div className='container mx-auto py-9 sm:py-10 md:py-12 lg:py-16 xl:py-24 2xl:py-30 '>
         <div className='flex items-center justify-between'>
           <h1 className='ourpowerfullh1'>Our Powerful <br className='hidden sm:block'/> Features</h1>
           <p className='discovertheezma'>Everything you need for informed crash game <br className='hidden md:block'/> analysis in one streamlined extension.</p>

@@ -55,7 +55,7 @@
   :root {
     --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #16171d;
+    --bg: #000002;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -152,10 +152,54 @@ body {
   font-style: italic;
 }
 
+
+
 @font-face {
   font-family: 'APK Protocol';
-  src: url('../src/assets/font/Protocol.ttf') format('truetype');
+  src: url('../src/assets/font/APK-Protocol-Thin-Trial.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'APK Protocol';
+  src: url('../src/assets/font/APK-Protocol-Light-Trial.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'APK Protocol';
+  src: url('../src/assets/font/APK-Protocol-Regular-Trial.otf') format('opentype');
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'APK Protocol';
+  src: url('../src/assets/font/APK-Protocol-Medium-Trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'APK Protocol';
+  src: url('../src/assets/font/APK-Protocol-Semi-Bold-Trial.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'APK Protocol';
+  src: url('../src/assets/font/APK-Protocol-Bold-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'APK Protocol';
+  src: url('../src/assets/font/APK-Protocol-Extra-Bold-Trial.otf') format('opentype');
+  font-weight: 800;
   font-style: normal;
 }
 

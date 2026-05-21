@@ -2,19 +2,20 @@
 
 @layer components {
   .adv-crash-container {
-    @apply min-h-screen bg-[#02040a] text-white py-12 md:py-16 px-4 sm:px-6 selection:bg-blue-500/30;
-    background: radial-gradient(circle at 50% -10%, #161b33 0%, #02040a 60%);
+    @apply text-white py-12 md:py-16 px-4 sm:px-6 bg-[#00000000];
   }
 }
 
 .badge {
-  @apply inline-block px-[16px] py-[10px] rounded-[80px] border border-white/10 text-[10px] sm:text-[12px] font-normal uppercase mb-6;
-  color: #8a8a93;
-  background: rgba(255, 255, 255, 0.03);
+  @apply inline-block px-[16px] py-[10px] rounded-[80px] text-[10px] sm:text-[12px] font-normal uppercase mb-6 leading-[150%] text-center;
+  color: #fff;
+  background: linear-gradient(90.8deg, rgba(255, 255, 255, 0.08) 15.13%, rgba(255, 255, 255, 0) 50.66%, rgba(255, 255, 255, 0.08) 85.52%);
+  border: 1px solid rgba(255, 255, 255, 0.08)
 }
 
 .section-title {
   @apply text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] font-medium mb-[16px] text-center;
+  font-family: 'APK Protocol';
   display: block;
   padding-top: 0.1em;
   padding-bottom: 0.2em;
@@ -36,7 +37,7 @@
 }
 
 .main-feature-card {
-  @apply mx-auto max-w-[1200px] px-6 sm:px-12 md:px-20 lg:px-[40px] xl:px-[40px] rounded-[24px] sm:rounded-[40px] border border-white/8 p-6 sm:p-10 flex flex-col lg:flex-row gap-8 lg:gap-10 items-center relative overflow-hidden;
+  @apply px-6 sm:px-12 md:px-20 lg:px-[40px] xl:px-[40px] rounded-[24px] sm:rounded-[40px] border border-white/8 p-6 sm:p-10 flex flex-col lg:flex-row gap-8 lg:gap-10 items-center relative ;
   background: rgba(9, 9, 12, 0.6);
   box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.01);
 }
@@ -50,19 +51,35 @@
 }
 
 .feature-title {
+  font-family: 'APK Protocol';
   @apply text-[14px] sm:text-[16px] md:text-[18px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] font-medium text-white leading-[110%];
 }
 
 .feature-desc {
-  @apply text-[#EFEDFD]/70 text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] pr-4;
+  font-family: 'Poppins';
+  @apply text-[#EFEDFDB2] font-normal text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] leading-[150%] pr-4;
 }
 
 .visual-side {
-  @apply flex-1 w-full min-w-0 mt-6 lg:mt-0 relative flex justify-center;
+  @apply flex-1 w-full mt-6 lg:mt-0 relative flex justify-center;
 }
 
 .visual-container {
-  @apply w-full max-w-[540px] aspect-[4/3] rounded-2xl sm:rounded-3xl border border-white/5 relative overflow-hidden p-4 sm:p-8 md:p-[50px] flex items-center justify-center;
+  @apply w-full max-w-[540px] aspect-4/3  flex items-center justify-center relative rounded-4xl;
+}
+.shablur{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  radial-gradient(74.72% 72.66% at 50% 100%, rgba(59, 66, 232, 0.3) 0%, rgba(59, 66, 232, 0) 100%); */
+  border: 1px solid #FFFFFF1A;
+  /* backdrop-filter: blur(50px); */
+  box-shadow: 0px 0px 30px 0px #FFFFFF33 inset;
+  border-radius: 0px;
 }
 
 .blue-glow {
@@ -70,7 +87,7 @@
 }
 
 .beam-line {
-  @apply absolute pointer-events-none w-full;
+  @apply absolute pointer-events-none w-full rounded-4xl;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -80,7 +97,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   filter: drop-shadow(0px 0px 25px rgba(59, 130, 246, 0.6));
-  z-index: 10;
+  z-index: 0;
+  border-radius: 34px;
 }
 
 .bg-card {
@@ -121,6 +139,7 @@
 }
 
 .mockup-title {
+  font-family: 'Poppins';
   @apply text-[14px] sm:text-[17px] font-medium text-white mb-4 sm:mb-5 tracking-wide text-left pl-2 sm:pl-6;
 }
 
@@ -136,12 +155,13 @@
 }
 
 .mockup-bullet-text {
+  font-family: 'Poppins';
   @apply text-[12px] sm:text-[14px] font-normal leading-relaxed;
   color: rgba(255, 255, 255, 0.65);
 }
 
 .features-grid {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-[1200px] mx-auto p-4 sm:p-8 md:p-[50px];
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6 w-full  pt-3 sm:pt-4 md:pt-[32px];
 }
 
 .feature-grid-card {
@@ -154,19 +174,20 @@
 }
 
 .grid-line-v {
-  @apply absolute left-[56px] top-0 w-[1px] h-6;
+  @apply absolute left-[42px] top-0 w-px h-6;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.01));
 }
 
 .grid-line-h {
-  @apply absolute left-0 top-[56px] h-[1px] w-full max-w-[540px];
+  @apply absolute left-0 top-[42px] h-px w-full max-w-[540px];
   background: linear-gradient(to right, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.01));
 }
 
 .icon-badge-outer {
+  font-family: 'poppins';
   @apply relative z-10 flex items-center justify-center rounded-full mb-[16px];
-  width: 64px;
-  height: 64px;
+  width: 38px;
+  height: 38px;
   background: RGB(13, 13, 20);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 
@@ -176,8 +197,8 @@
 
 .icon-badge-inner {
   @apply flex items-center justify-center rounded-full;
-  width: 48px;
-  height: 48px;
+  width: 29px;
+  height: 29px;
   background: linear-gradient( 
     rgba(255, 255, 255, 0) 50%, 
     rgba(255, 255, 255, 0.3) 100%
@@ -223,11 +244,13 @@
 }
 
 .feature-grid-title {
-  @apply text-[15px] sm:text-[16px] font-medium leading-[110%] mb-[8px];
-  color: rgba(255, 255, 255, 1);
+  font-family: 'APK Protocol';
+  @apply text-[15px] sm:text-[16px] lg:text-[18px] font-medium leading-[110%] mb-[8px];
+  color: #ffffff;
 }
 
 .feature-grid-desc {
   @apply text-[13px] sm:text-[14px] leading-[150%] font-normal;
-  color: rgba(239, 237, 253, 0.7);
+  color: #EFEDFDB2;
+;
 }
