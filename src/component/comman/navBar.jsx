@@ -112,7 +112,7 @@ const NavBar = () => {
         {/* Nav links */}
         <nav
           ref={menuRef}
-          className={`absolute sm:top-0 top-[100%] sm:left-0 sm:relative duration-1000 z-[998] sm:opacity-100 flex justify-start sm:justify-start items-start sm:items-center gap-3.5 sm:gap-3.75 md:gap-4 lg:gap-5 xl:gap-6 2xl:gap-7.5 sm:bg-transparent bg-[#15161B] sm:flex-row flex-col p-5 sm:p-0 sm:w-fit w-full h-screen sm:h-full pl-6 sm:pl-8 md:pl-9 lg:pl-10 xl:pl-12 2xl:pl-[60px] ${
+          className={`absolute sm:top-0 top-full sm:left-0 sm:relative duration-1000 z-998 sm:opacity-100 flex justify-start sm:justify-start items-start sm:items-center gap-3.5 sm:gap-3.75 md:gap-4 lg:gap-5 xl:gap-6 2xl:gap-7.5 sm:bg-transparent bg-[#15161B] sm:flex-row flex-col p-5 sm:p-0 sm:w-fit w-full h-screen sm:h-full pl-6 sm:pl-8 md:pl-9 lg:pl-10 xl:pl-12 2xl:pl-[60px] ${
             toggle ? "left-0 opacity-100" : "left-[120%] opacity-10"
           }`}
         >
@@ -137,7 +137,7 @@ const NavBar = () => {
           <ul className="sm:hidden flex  gap-4 shadow-[0px_3.71px_4.85px_0px_rgba(59,66,232,0.15),0px_10.27px_13.4px_0px_rgba(59,66,232,0.22),0px_24.72px_32.26px_0px_rgba(59,66,232,0.19),0px_42px_107px_0px_rgba(59,66,232,0.34),inset_0px_1px_4px_2px_rgba(223,224,255,1),inset_0px_1px_18px_2px_rgba(207,209,255,1)] rounded-3xl">
           <button className="growingstabtn group  relative">
             <div className="relative h-full flex items-center justify-center gap-3.25 sm:gap-3.5 md:gap-3.75 lg:gap-4 xl:gap-5 2xl:gap-6 ">
-              <div className="relative  flex items-center justify-center z-[2]">
+              <div className="relative  flex items-center justify-center z-2">
                 <span className="absolute top-0 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3 transition-all duration-700 ease-in-out">
                   Get Extension
                 </span>
