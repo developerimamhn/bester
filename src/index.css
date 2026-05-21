@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import './component/advCrash/AdvancedCrash.css';
 @import './component/downloadExt/index.css';
-@import './component/footer/index.css';
+@import './component/footerSection/index.css';
 @import './component/header/index.css';
 @import './component/fEQ/index.css';
 @import './component/ourPowerful/index.css';

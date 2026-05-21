@@ -6,7 +6,7 @@ import HeroSection from './component/heroSection/HeroSection';
 import NavBar from './component/comman/navBar';
 import AdvancedCrashEngine from './component/advCrash/AdvancedCrashEngine';
 import { SeeAction } from './component/seeAction/SeeAction';
-import Footer from './component/footer/footer'
+import Footer from './component/footerSection/footer';
 
 function App() {
 

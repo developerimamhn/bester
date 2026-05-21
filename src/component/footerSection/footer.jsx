@@ -43,7 +43,7 @@ const socialLinks = [
     { icon: telegram, hasWrapper: false },
 ];
 
-const Footer = () => {
+const footer = () => {
     return (
         <div className='relative bg-[#000002]'>
             <img src={footer_bg} alt=" bg" className='absolute inset-0 w-full h-full object-cover -z-px' />
@@ -134,5 +134,5 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default footer
 
