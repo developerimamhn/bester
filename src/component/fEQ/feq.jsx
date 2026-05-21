@@ -32,7 +32,7 @@ const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section className="w-full  py-16 px-4 sm:px-6 relative">
+        <section id="FAQ" className="w-full  py-16 px-4 sm:px-6 relative">
             <img src={imagess} alt="bg" className='w-4/5 absolute top-1/2 -translate-y-1/2 left-0 h-auto z-2' />
             <div className="flex flex-col lg:flex-row max-w-5xl mx-auto gap-10 lg:gap-[48px] relative z-10">
                 <div className="shrink-0 pt-0 lg:pt-[8px] text-center lg:text-left">

@@ -36,12 +36,12 @@ const HeroSection = () => {
             <img src={hero_bg_img} alt="bg" className='absolute inset-0 w-full h-full object-cover rounded-b-3xl z-0' />
             <img src={hero_bg} alt="bg" className='absolute bottom-0 left-1/2 -translate-x-1/2 w-full z-1 pointer-events-none' />
             <div className='relative flex flex-col items-center justify-center pt-30'>
-                <div className='rounded-[80px] border border-[#FFFFFF14] py-1 px-2 sm:px-3 md:px-4 mb-1 sm:mb-2 bg-[linear-gradient(90.8deg,rgba(255,255,255,0.08)_15.13%,rgba(255,255,255,0)_50.66%,rgba(255,255,255,0.08)_85.52%)]'>
+                <div className='rounded-[80px] border border-[#FFFFFF14] z-10 py-1 px-2 sm:px-3 md:px-4 mb-1 sm:mb-2 bg-[linear-gradient(90.8deg,rgba(255,255,255,0.08)_15.13%,rgba(255,255,255,0)_50.66%,rgba(255,255,255,0.08)_85.52%)]'>
                     <p className='font-normal sm_text leading-[150%] tracking-[0%] text-center uppercase text-[#FFFFFF]'>
                         Approved mathematical Algorithms
                     </p>
                 </div>
-                <div className='flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6'>
+                <div className='flex flex-col items-center justify-center z-1 gap-3 sm:gap-4 md:gap-5 lg:gap-6'>
                     <h1 className='flex items-center justify-center font-semibold heading_text leading-[120%] bg-[linear-gradient(90deg,rgba(255,255,255,0)_-67.03%,#FFFFFF_46.74%,rgba(255,255,255,0)_167.28%)] bg-clip-text text-transparent '>
                         Precision Crash Predictions
                     </h1>
@@ -65,7 +65,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="relative grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 lg:gap-16 pt-40 sm:pt-50 md:pt-60 lg:pt-70 xl:pt-80 2xl:pt-91 pb-24 sm:pb-26 md:pb-30 lg:pb-34 xl:pb-38 2xl:pb-52">
+            <div className="z-10 relative grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 lg:gap-16 pt-40 sm:pt-50 md:pt-60 lg:pt-70 xl:pt-80 2xl:pt-91 pb-24 sm:pb-26 md:pb-30 lg:pb-34 xl:pb-38 2xl:pb-52">
                 {stats.map((item) => (
                     <div key={item.id} className="flex gap-4">
                         <div className="flex items-center justify-center w-9.75 h-9.75 rounded-full bg-[#FFFFFF0A]">

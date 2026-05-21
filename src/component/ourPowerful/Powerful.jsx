@@ -46,8 +46,7 @@ const Powerful = () => {
   ];
 
   return (
-    <div className=''>
-      
+    <div id='features' className=''>
       <div className='container mx-auto py-9 sm:py-10 md:py-12 lg:py-16 xl:py-24 2xl:py-30 '>
         <div className='flex items-center justify-between'>
           <h1 className='ourpowerfullh1'>Our Powerful <br className='hidden sm:block'/> Features</h1>
@@ -68,7 +67,7 @@ const Powerful = () => {
                       className="powerfullcardimg"
                     />
 
-                    <div>
+                    <div className="">
                       <h3 className="powerfullautaiwtl">{item.title}</h3>
                       <p className="powerfullautaiwtlp">{item.desc}</p>
                     </div>

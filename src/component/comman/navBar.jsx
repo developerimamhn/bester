@@ -6,11 +6,11 @@ import button_bg_img from "../../assets/image/button&bold_bg_img.png";
 
 
 const navLinks = [
-  { name: "Features", id: "Features" },
-  { name: "About", id: "About" },
-  { name: "Services", id: "Services" },
-  { name: "Tokenomics", id: "Tokenomics" },
-  { name: "Contact", id: "Contact" },
+  { name: "Features", id: "features" },
+  { name: "Engine", id: "engine" },
+  { name: "Demo", id: "demo" },
+  { name: "Download", id: "download" },
+  { name: "FAQ", id: "FAQ" },
 ];
 
 

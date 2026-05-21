@@ -30,36 +30,36 @@ const browsers = [
 
 const DownloadExtension = () => {
     return (
-        <section className="w-full  py-6 flex flex-col items-center gap-12 relative">
+        <section id="download" className="w-full  py-6 flex flex-col items-center gap-12 relative">
             <img src={linefore} alt="" className="w-full absolute top-1/2 -translate-y-1/2 right-0 h-auto z-0" />
             <img src={bgone} alt="" className="absolute top-0 right-0 w-1/2 h-full select-none pointer-events-none z-10" />
             <div className="w-full container mx-auto flex flex-col items-start gap-3">
-                <div className="fill_input border border-white/8 px-4 py-0.75 rounded-[80px]" >
-                <span
-                    className="all_font_normal uppercase text-white text-[10px] sm:text-[12px] lg:text-[14px] tracking-normal leading-[150%]">
-                    Real-time predictions
-                </span>
-            </div>
+                <div className="z-10 fill_input border border-white/8 px-4 py-0.75 rounded-[80px]" >
+                    <span
+                        className="all_font_normal uppercase text-white text-[10px] sm:text-[12px] lg:text-[14px] tracking-normal leading-[150%]">
+                        Real-time predictions
+                    </span>
+                </div>
 
-                <h2 className="gradient-text text-[32px] sm:text-[42px] lg:text-[48px] font-medium capitalize">
+                <h2 className="z-10 gradient-text text-[32px] sm:text-[42px] lg:text-[48px] font-medium capitalize">
                     Download Extension
                 </h2>
-                <p className="text_normal_poppins text-[#9796A1] text-[12px] sm:text-[14] lg:text-[16px]">
+                <p className="z-10 text_normal_poppins text-[#9796A1] text-[12px] sm:text-[14px] lg:text-[16px]">
                     Choose your browser and get started in under a minute.
                 </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4 container mx-auto">
+            <div className="z-10 grid grid-cols-1 md:grid-cols-3 gap-2.75 sm:gap-3 md:gap-3.25 lg:gap-3.5 xl:gap-3.75 2xl:gap-4 container mx-auto">
                 {browsers.map((browser) => (
                     <div
                         key={browser.name}
                         className="relative w-full rounded-[20px] border border-[rgba(255,255,255,0.1)] overflow-hidden group">
-                        
+
                         <div className='bg-[linear-gradient(90deg,rgba(59,66,232,0)_0%,#3B42E8_50%,rgba(59,66,232,0)_100%)] absolute top-0 left-1/2 -translate-x-1/2 z-10 w-1/3 h-px'></div>
                         <img
                             src={imgCardBg}
                             alt=""
                             className="absolute w-full h-auto object-cover pointer-events-none"
-                        /> 
+                        />
 
                         <div className="relative flex flex-col items-center pt-[24px] px-[38px] gap-[16px]">
                             <div className="relative w-[60px] h-[60px] rounded-full flex items-center justify-center">
@@ -74,8 +74,7 @@ const DownloadExtension = () => {
                                     className="relative z-10 w-[36px] h-[36px] object-contain"
                                 />
                             </div>
-                            <p
-                                className="apk-title text-white text-center">
+                            <p className="apk-title text-white text-center">
                                 {browser.name}
                             </p>
                             <p className="steps-text text-[#9796A1] text-center">
@@ -105,41 +104,31 @@ const DownloadExtension = () => {
                     className="absolute inset-0 w-full h-full object-cover opacity-100 z-0 pointer-events-none"
                 />
                 <div className="relative z-10 flex justify-center">
-
-                    <div className="w-full sm:w-[576px] rounded-2xl border border-white/10 backdrop-blur-[100px] overflow-hidden bg-black/10">
-
+                    <div className="w-full sm:w-[576px] rounded-2xl border border-white/10 backdrop-blur-[100px] overflow-hidden bg-white/10">
                         <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
                             <p className="text-white">Quick Install Guide</p>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.8334 9.16683L17.6667 2.3335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M18.3334 5.6665V1.6665H14.3334" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.16662 1.6665H7.49996C3.33329 1.6665 1.66663 3.33317 1.66663 7.49984V12.4998C1.66663 16.6665 3.33329 18.3332 7.49996 18.3332H12.5C16.6666 18.3332 18.3333 16.6665 18.3333 12.4998V10.8332" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.8334 9.16683L17.6667 2.3335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.3334 5.6665V1.6665H14.3334" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.16662 1.6665H7.49996C3.33329 1.6665 1.66663 3.33317 1.66663 7.49984V12.4998C1.66663 16.6665 3.33329 18.3332 7.49996 18.3332H12.5C16.6666 18.3332 18.3333 16.6665 18.3333 12.4998V10.8332" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-
                         </div>
-
                         <div className="p-4 sm:p-8 flex flex-col gap-5">
-
                             <div>
                                 <p className="text-white font-medium">Chrome / Edge:</p>
                                 <p className="text-gray-300 text-sm">
                                     Download zip → extract → extensions → developer mode → load unpacked.
                                 </p>
                             </div>
-
                             <div>
                                 <p className="text-white font-medium">Firefox:</p>
                                 <p className="text-gray-300 text-sm">
                                     about:debugging → This Firefox → Load Temporary Add-on.
                                 </p>
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
         </section>
     );

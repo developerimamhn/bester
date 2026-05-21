@@ -5,7 +5,7 @@ import imagess from '../../assets/image/Ellipse 1636.png';
 
 export const SeeAction = () => {
     return (
-        <div className='relative'>
+        <div id="demo" className='relative'>
             <img src={imagess} alt="bg" className='w-2/3 absolute top-1/2 -translate-y-1/2 left-0 h-auto z-2' />
             <section className="action-section px-4 sm:px-0 ">
                 <div className="action-header">

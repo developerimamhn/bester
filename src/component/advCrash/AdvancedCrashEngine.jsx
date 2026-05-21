@@ -29,7 +29,7 @@ const AdvancedCrashEngine = () => {
   ];
 
   return (
-    <div className="adv-crash-container flex flex-col items-center pb-9 sm:pb-10 md:pb-12 lg:pb-16 xl:pb-24 2xl:pb-30">
+    <div id="engine" className="adv-crash-container flex flex-col items-center pb-9 sm:pb-10 md:pb-12 lg:pb-16 xl:pb-24 2xl:pb-30">
       <img src={imagess} alt="bg" className='w-full absolute top-0 left-0 h-auto z-0' />
       <div className='container mx-auto'>
       <div className="flex flex-col items-center z-10 w-full relative pt-9 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-24 2xl:pt-30 relaitve">

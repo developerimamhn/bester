@@ -29,21 +29,36 @@ const wallets = [
 
 const footerLinks = [
     {
-        links: ["Features", "Engine", "Demo", "Download", "FAQ"],
+        links: [
+            { name: "Features", id: "features" },
+            { name: "Engine", id: "engine" },
+            { name: "Demo", id: "demo" },
+            { name: "Download", id: "download" },
+            { name: "FAQ", id: "FAQ" },
+        ],
     },
     {
-        links: ["Teams of Services", "Privecy Policy"],
+        links: [
+            { name: "Terms of Services", id: "terms" },
+            { name: "Privacy Policy", id: "privacy" },
+        ],
     },
 ];
 
 const socialLinks = [
-    { icon: facebook, hasWrapper: false },
-    { icon: twitter, hasWrapper: false },
-    { icon: instagram, hasWrapper: true },
-    { icon: telegram, hasWrapper: false },
+    { icon: facebook, hasWrapper: false, id: "facebook" },
+    { icon: twitter, hasWrapper: false, id: "twitter" },
+    { icon: instagram, hasWrapper: true, id: "instagram" },
+    { icon: telegram, hasWrapper: false, id: "telegram" },
 ];
 
 const footer = () => {
+
+    const handleScrollToTop = (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <div className='relative bg-[#000002]'>
             <img src={footer_bg} alt=" bg" className='absolute inset-0 w-full h-full object-cover -z-px' />
@@ -54,7 +69,7 @@ const footer = () => {
                             Support & Development
                         </p>
                     </div>
-                </div>    
+                </div>
                 <div className='flex flex-col items-center justify-center section-content'>
                     <h1 className='flex items-center justify-center font-semibold section-heading leading-[120%] bg-[linear-gradient(90deg,rgba(255,255,255,0)_-67.03%,#FFFFFF_46.74%,rgba(255,255,255,0)_167.28%)] bg-clip-text text-transparent'>
                         Donate & Support
@@ -92,7 +107,9 @@ const footer = () => {
                 </div>
                 <div className='flex flex-col md:flex-row justify-between footer-top'>
                     <div className='flex flex-col footer-brand'>
-                        <img src={icon_2} alt="icon" className='footer-logo' />
+                        <a onClick={handleScrollToTop} href="/" >
+                            <img src={icon_2} alt="icon" className='footer-logo' />
+                        </a>
                         <p className='footer-desc'>
                             Advanced crash prediction engine powered{" "}
                             <br className='hidden md:block' />
@@ -105,9 +122,9 @@ const footer = () => {
                         {footerLinks.map((column, colIndex) => (
                             <div key={colIndex} className='flex flex-col footer-links-column'>
                                 {column.links.map((link, linkIndex) => (
-                                    <p key={linkIndex} className='footer-link'>
-                                        {link}
-                                    </p>
+                                    <a key={linkIndex} href={`#${link.id}`} className='footer-link'>
+                                        {link.name}
+                                    </a>
                                 ))}
                             </div>
                         ))}
@@ -121,10 +138,14 @@ const footer = () => {
                         {socialLinks.map((social, index) =>
                             social.hasWrapper ? (
                                 <div key={index} className='flex items-center justify-center footer-social-wrapper'>
-                                    <img src={social.icon} alt="icon" className='footer-social-icon-sm' />
+                                    <a href={`#${social.id}`} >
+                                        <img src={social.icon} alt="icon" className='footer-social-icon-sm' />
+                                    </a>
                                 </div>
                             ) : (
-                                <img key={index} src={social.icon} alt="icon" className='footer-social-wrapper' />
+                                <a key={index} href={`#${social.id}`}>
+                                    <img key={index} src={social.icon} alt="icon" className='footer-social-wrapper' />
+                                </a>
                             )
                         )}
                     </div>
