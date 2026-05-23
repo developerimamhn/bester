@@ -3,27 +3,27 @@ import imagess from '../../assets/image/Ellipse 1636.png';
 
 const faqs = [
     {
-        question: "What types of loans do you offer?",
+        question: "What types of loans do you offer ?",
         answer: "We offer personal loans, business loans, home loans, and auto loans. Check our loan options to find the best fit for your needs.",
     },
     {
-        question: "How do I apply for a loan?",
+        question: "How do I apply for a loan ?",
         answer: "You can apply online through our website or visit any of our branches. The process takes less than 10 minutes.",
     },
     {
-        question: "What is the minimum and maximum loan amount?",
+        question: "What is the minimum and maximum loan amount ?",
         answer: "Our loans range from $1,000 to $500,000 depending on the loan type and your eligibility.",
     },
     {
-        question: "How long does it take to get approved?",
+        question: "How long does it take to get approved ?",
         answer: "Most applications are approved within 24-48 hours after submitting all required documents.",
     },
     {
-        question: "Who is eligible to apply?",
+        question: "Who is eligible to apply ?",
         answer: "Anyone aged 18 or above with a valid ID and stable income source can apply for a loan.",
     },
     {
-        question: "What documents do I need?",
+        question: "What documents do I need ?",
         answer: "You will need a valid government-issued ID, proof of income, and proof of address.",
     },
 ];

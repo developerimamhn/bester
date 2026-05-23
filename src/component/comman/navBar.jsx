@@ -138,11 +138,11 @@ const NavBar = () => {
           <button className="growingstabtn group  relative">
             <div className="relative h-full flex items-center justify-center gap-3.25 sm:gap-3.5 md:gap-3.75 lg:gap-4 xl:gap-5 2xl:gap-6 ">
               <div className="relative  flex items-center justify-center z-2">
-                <span className="absolute top-0 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3 transition-all duration-700 ease-in-out">
+                <span className="absolute closbar top-0 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3 transition-all duration-700 ease-in-out">
                   Get Extension
                 </span>
-                <span className="opacity-0">Get Extension</span>
-                <span className="absolute -bottom-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                <span className="opacity-0 closbar">Get Extension</span>
+                <span className="absolute closbar -bottom-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 transition-all duration-700 ease-in-out">
                   Get Extension
                 </span>
               </div>
@@ -192,11 +192,11 @@ const NavBar = () => {
           <button className="growingstabtn group  relative">
             <div className="relative h-full flex items-center justify-center gap-3.25 sm:gap-3.5 md:gap-3.75 lg:gap-4 xl:gap-5 2xl:gap-6 ">
               <div className="relative  flex items-center justify-center [z-2]">
-                <span className="absolute top-0 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3 transition-all duration-700 ease-in-out">
+                <span className="absolute closbar top-0 opacity-100 group-hover:opacity-0 group-hover:-translate-y-3 transition-all duration-700 ease-in-out">
                   Get Extension
                 </span>
-                <span className="opacity-0">Get Extension</span>
-                <span className="absolute -bottom-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                <span className="opacity-0 closbar">Get Extension</span>
+                <span className="absolute closbar -bottom-5 opacity-0 group-hover:bottom-0 group-hover:opacity-100 transition-all duration-700 ease-in-out">
                   Get Extension
                 </span>
               </div>

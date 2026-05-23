@@ -25,3 +25,75 @@
 .sm_text {
   @apply text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px] xl:text-[14px]
 }
+
+.hero-section {
+  overflow: hidden;
+  position: relative;
+  animation: heroSectionFade 0.9s ease-out backwards;
+}
+
+.hero-bg {
+  animation: heroBgFloat 12s ease-in-out infinite alternate;
+}
+
+.hero-heading,
+.hero-copy,
+.hero-cta,
+.hero-stat-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFadeUp 0.8s ease-out forwards;
+}
+
+.hero-heading {
+  animation-delay: 0.25s;
+}
+
+.hero-copy {
+  animation-delay: 0.45s;
+}
+
+.hero-cta {
+  animation-delay: 0.65s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-stat-card {
+  animation-delay: 0.8s;
+}
+
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(59, 66, 232, 0.2);
+}
+
+.hero-stat-card:hover {
+  transform: translateY(-4px);
+}
+
+@keyframes heroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroSectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroBgFloat {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}

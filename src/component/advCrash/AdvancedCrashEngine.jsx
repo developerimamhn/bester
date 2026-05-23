@@ -29,10 +29,10 @@ const AdvancedCrashEngine = () => {
   ];
 
   return (
-    <div id="engine" className="adv-crash-container flex flex-col items-center pb-9 sm:pb-10 md:pb-12 lg:pb-16 xl:pb-24 2xl:pb-30">
-      <img src={imagess} alt="bg" className='w-full absolute top-0 left-0 h-auto z-0' />
+    <div id="engine" className="advanced-crash-section adv-crash-container flex flex-col items-center pb-9 sm:pb-10 md:pb-12 lg:pb-16 xl:pb-24 2xl:pb-30">
+      <img src={imagess} alt="bg" className='w-full absolute top-0 left-1/2 -translate-x-1/2 h-auto z-6 select-none pointer-events-none' />
       <div className='container mx-auto'>
-      <div className="flex flex-col items-center z-10 w-full relative pt-9 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-24 2xl:pt-30 relaitve">
+      <div className="flex flex-col items-center z-10 w-full relative pt-9 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-24 2xl:pt-10 relaitve">
         <svg className='w-1/2 h-full absolute top-1/2 left-1/2 transform -translate-1/2 -z-2 opacity-50 sm:block hidden' viewBox="0 0 875 875" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_2434_94)">
 <circle cx="437.091" cy="437.091" r="143.838" fill="#003BFF"/>
@@ -514,7 +514,7 @@ const AdvancedCrashEngine = () => {
           in one streamlined extension.
         </p>
       </div>
-      <div className="main-feature-card relative overflow-hidden">
+      <div className="main-feature-card border border-white/8 relative overflow-hidden flex flex-col lg:flex-row items-start justify-between">
         <svg className='w-full h-3/3 absolute top-0 left-0' viewBox="0 0 956 556" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_f_2118_1077)" style={{ mixBlendMode: 'plus-lighter' }}>
             <path
@@ -553,16 +553,20 @@ const AdvancedCrashEngine = () => {
           </defs>
         </svg>
 
-        <div className="feature-list">
+        <div className="feature-list z-20 w-full lg:w-1/2">
           {features.map((feature, idx) => (
-            <div key={idx} className="feature-item">
-              <h3 className="feature-title">{feature.title}</h3>
+            <div key={idx} className="flex flex-col items-start justify-start gap-3  ">
+              <h3 className="feature-title pt-6">{feature.title}</h3>
+              
               <p className="feature-desc">{feature.desc}</p>
+              {idx !== features.length - 1 && (
+                  <div className='bg-white/8 h-px w-full'></div>
+                )}
             </div>
           ))}
         </div>
-          <div className="visual-container ">
-          <img src={imagebg} alt="background" className="absolute inset-0 w-full h-full object-fit rounded-4xl pointer-events-none select-none" />
+          <div className="visual-container visual-side relative z-10 min-h-[320px] w-full lg:w-1/2 overflow-hidden">
+          <img src={imagebg} alt="background" className="absolute inset-0 w-full h-full object-cover rounded-4xl pointer-events-none select-none" />
         </div>
 
       </div>

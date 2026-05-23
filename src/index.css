@@ -45,6 +45,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   scroll-behavior: smooth;
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -204,7 +205,11 @@ body {
 }
 
 @layer utilities {
+  .closbar{
+    font-family: 'APK Protocol';
+  }
   .growingstabtn {
+    font-family: 'APK Protocol';
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: linear-gradient(0deg, #3B42E8, #3B42E8),
@@ -228,7 +233,7 @@ body {
     cursor: pointer;
   }
   .growingstabtn{
-    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] py-2 pl-3 md:pl-4 lg:pl-5 xl:pl-6 pr-2;
+    @apply text-[11px] sm:text-[12px] lg:text-[14px] 2xl:text-[16px] py-2 pl-3 md:pl-4 lg:pl-5 xl:pl-6 pr-2;
   }
 
   @keyframes infinite-scroll {

@@ -60,7 +60,7 @@ const footer = () => {
     };
 
     return (
-        <div className='relative bg-[#000002]'>
+        <div className='relative bg-[#000002] footer'>
             <img src={footer_bg} alt=" bg" className='absolute inset-0 w-full h-full object-cover -z-px' />
             <div className='relative container mx-auto px-4 w-full h-auto z-10'>
                 <div className='flex items-center justify-center badge-wrapper'>

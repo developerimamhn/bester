@@ -6,8 +6,8 @@ import imagess from '../../assets/image/Ellipse 1636.png';
 export const SeeAction = () => {
     return (
         <div id="demo" className='relative'>
-            <img src={imagess} alt="bg" className='w-2/3 absolute top-1/2 -translate-y-1/2 left-0 h-auto z-2' />
-            <section className="action-section px-4 sm:px-0 ">
+            <img src={imagess} alt="bg" className='w-2/3 absolute top-1/2 -translate-y-1/2 left-0 h-auto z-0' />
+            <section className="see-action-section action-section px-4 sm:px-0 relative z-1">
                 <div className="action-header">
                     <span className="badge">Real-Time Predictions</span>
                     <h2 className="section-title">See It In Action</h2>
@@ -16,9 +16,11 @@ export const SeeAction = () => {
                     </p>
                 </div>
                 <div className="video-wrapper container mx-auto">
+                    <div className='w-full h-[36%] absolute bottom-0 left-0 pointer-events-none select-none gradentbgvideo z-10'></div>
                     <div className="video-ambient-beam" />
 
                     <div className="video-container">
+                        
                         <img
                             src={VideoImg}
                             className="video-screenshot"
@@ -26,7 +28,7 @@ export const SeeAction = () => {
                         />
                         <div className="video-overlay" />
 
-                        <button className="play-button-container" aria-label="Play Video">
+                        <button className="play-button-container cursor-pointer" aria-label="Play Video">
                             <div className="play-pulse-ring ring-1" />
                             <div className="play-pulse-ring ring-2" />
                             <div className="play-button-core">

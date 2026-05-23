@@ -117,6 +117,12 @@
     );
   }
   
+  
+  .gradentbgvideo{
+    background: linear-gradient(180deg, rgba(0, 0, 2, 0) 0%, #000002 100%);
+    backdrop-filter: blur(3px)
+
+  }
   .video-container {
     @apply relative w-full h-auto rounded-[14px] overflow-hidden border border-white/4;
   }

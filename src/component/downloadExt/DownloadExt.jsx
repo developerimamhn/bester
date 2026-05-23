@@ -30,10 +30,10 @@ const browsers = [
 
 const DownloadExtension = () => {
     return (
-        <section id="download" className="w-full  py-6 flex flex-col items-center gap-12 relative">
+        <section id="download" className="download-section w-full  py-6 flex flex-col items-center gap-12 relative">
             <img src={linefore} alt="" className="w-full absolute top-1/2 -translate-y-1/2 right-0 h-auto z-0" />
             <img src={bgone} alt="" className="absolute top-0 right-0 w-1/2 h-full select-none pointer-events-none z-10" />
-            <div className="w-full container mx-auto flex flex-col items-start gap-3">
+            <div className="download-copy w-full container mx-auto flex flex-col items-start gap-3">
                 <div className="z-10 fill_input border border-white/8 px-4 py-0.75 rounded-[80px]" >
                     <span
                         className="all_font_normal uppercase text-white text-[10px] sm:text-[12px] lg:text-[14px] tracking-normal leading-[150%]">
@@ -52,7 +52,7 @@ const DownloadExtension = () => {
                 {browsers.map((browser) => (
                     <div
                         key={browser.name}
-                        className="relative w-full rounded-[20px] border border-[rgba(255,255,255,0.1)] overflow-hidden group">
+                        className="download-card relative w-full rounded-[20px] border border-[rgba(255,255,255,0.1)] overflow-hidden group">
 
                         <div className='bg-[linear-gradient(90deg,rgba(59,66,232,0)_0%,#3B42E8_50%,rgba(59,66,232,0)_100%)] absolute top-0 left-1/2 -translate-x-1/2 z-10 w-1/3 h-px'></div>
                         <img
@@ -104,8 +104,8 @@ const DownloadExtension = () => {
                     className="absolute inset-0 w-full h-full object-cover opacity-100 z-0 pointer-events-none"
                 />
                 <div className="relative z-10 flex justify-center">
-                    <div className="w-full sm:w-[576px] rounded-2xl border border-white/10 backdrop-blur-[100px] overflow-hidden bg-white/10">
-                        <div className="px-4 py-3 border-b border-white/10 flex items-center justify-between">
+                    <div className="w-full sm:w-[576px] rounded-2xl border border-white/10 backdrop-blur-[100px] overflow-hidden ">
+                        <div className="px-4 py-3 border-b border-white/10 bg-white/10 flex items-center justify-between">
                             <p className="text-white">Quick Install Guide</p>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.8334 9.16683L17.6667 2.3335" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -116,14 +116,14 @@ const DownloadExtension = () => {
                         <div className="p-4 sm:p-8 flex flex-col gap-5">
                             <div>
                                 <p className="text-white font-medium">Chrome / Edge:</p>
-                                <p className="text-gray-300 text-sm">
-                                    Download zip → extract → extensions → developer mode → load unpacked.
+                                <p className="text-[#9796A1] text-sm">
+                                    Download the zip, extract it, open Extensions page <b className='font-medium text-white'>(chrome://extensions or edge://extensions)</b>, enable "Developer mode", click "Load unpacked", and select the extracted folder.
                                 </p>
                             </div>
                             <div>
                                 <p className="text-white font-medium">Firefox:</p>
-                                <p className="text-gray-300 text-sm">
-                                    about:debugging → This Firefox → Load Temporary Add-on.
+                                <p className="text-[#9796A1] text-sm">
+                                    Go to about:debugging, click <b className='font-medium text-white'>"This Firefox"</b>, then <b className='font-medium text-white'>"Load Temporary Add-on"</b> and select any file from the extracted folder.
                                 </p>
                             </div>
                         </div>
