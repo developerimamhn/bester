@@ -183,6 +183,8 @@ const GsapAnimations = () => {
         },
       });
 
+      
+
       gsap.from('.footer', {
         y: 40,
         opacity: 0,

@@ -1,5 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import imagess from '../../assets/image/Ellipse 1636.png';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const faqs = [
     {
@@ -30,13 +34,51 @@ const faqs = [
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(0);
+    const sectionRef = useRef(null);
+    const headingRef = useRef(null);
+    const itemsRef = useRef([]);
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            // Heading animation
+            gsap.from(headingRef.current, {
+                opacity: 0,
+                y: 30,
+                duration: 0.8,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    start: "top 75%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+
+            // FAQ items stagger animation
+            itemsRef.current.forEach((item, i) => {
+                gsap.from(item, {
+                    opacity: 0,
+                    y: 20,
+                    duration: 0.6,
+                    ease: "power3.out",
+                    delay: i * 0.1,
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top 88%",
+                        toggleActions: "play none none reverse"
+                    }
+                });
+            });
+        }, sectionRef);
+
+        return () => ctx.revert();
+    }, []);
 
     return (
-        <section id="FAQ" className="w-full  py-16 px-4 sm:px-6 relative">
-            <img src={imagess} alt="bg" className='w-4/5 absolute top-1/2 -translate-y-1/2 left-0 h-auto z-2' />
+        <section id="FAQ" ref={sectionRef} className="w-full  py-16 px-4 sm:px-6 relative">
+            <img src={imagess} alt="bg" className='w-4/5 absolute top-1/2 -translate-y-1/2 left-0 h-auto z-[2]' />
             <div className="flex flex-col lg:flex-row max-w-5xl mx-auto gap-10 lg:gap-[48px] relative z-10">
                 <div className="shrink-0 pt-0 lg:pt-[8px] text-center lg:text-left">
-                    <h2 className="hero_gradient_title text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <h2 ref={headingRef} className="hero_gradient_title text-3xl sm:text-4xl lg:text-5xl leading-tight">
                         Frequently Asked<br /> Questions
                     </h2>
                 </div>
@@ -45,8 +87,8 @@ const FAQ = () => {
                     {faqs.map((faq, index) => (
                         <div
                             key={index}
-                            className={`
-                                        rounded-2xl sm:rounded-[32px]
+                            ref={el => itemsRef.current[index] = el}
+                            className={`rounded-2xl sm:rounded-[32px] duraction-300
                                         overflow-hidden
                                         cursor-pointer
                                         transition-all
@@ -96,7 +138,3 @@ const FAQ = () => {
 };
 
 export default FAQ;
-
-
-
-
